@@ -1,6 +1,8 @@
 # moviefy-MERN-app
 MERN stack movie info app with user login, movie/series search, now-trending, watchlist ,etc. functionalities 
 
+## DEMO: [https://moviefy1.herokuapp.com](https://moviefy1.herokuapp.com)
+
 ## Environment variables (.env files) 
 - MONGO_URL : mongo atlas url for storing user data (in root directory)
 - SECRET_KEY : secret key for encrypting/decrypting user passwords using JWT (in root directory)
