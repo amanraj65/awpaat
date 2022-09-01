@@ -1,16 +1,20 @@
-# DISNEYHUT MERN APP
-## DEMO: [https://disneyhut.herokuapp.com](http://disneyhut.herokuapp.com)
-## Environment variables
-- MONGO_URL
-- SECRET_KEY
-- REACT_APP_API_KEY
+# moviefy-MERN-app
+MERN stack movie info app with user login, movie/series search, now-trending, watchlist ,etc. functionalities 
+
+## DEMO: [https://moviefy1.herokuapp.com](https://moviefy1.herokuapp.com)
+
+## Environment variables (.env files) 
+- MONGO_URL : mongo atlas url for storing user data (in root directory)
+- SECRET_KEY : secret key for encrypting/decrypting user passwords using JWT (in root directory)
+- REACT_APP_API_KEY : TMDB api key for fetching movies data (in ./client directory)
 ## Technologies used:
+
 ### Backend 
-- Nodejs
-- Expressjs
 - Mongodb/mongoose
+- Expressjs
+- Nodejs
 - JWT / jsonwentoken
-- Bcryptjs
+
 ### Frontend
 - Reactjs 
 - React-router-dom
@@ -22,13 +26,11 @@
 - Mui/icons-material
 
 ### Features 
-- interaction with the backend through API Rest.
 - fetching data from rapid api(TMBD Api).
-- liked movies saved to database.
-- authentication system width signup/email/login/signout.
-- awesome fully mobile responsive design.
 - search any movie/series by their name.
 - sort movies/series according to genres.
-- pagination.
+- see details of any movie/series by ckicking.
 - add/remove any movie/series to/from watchlist.
+- authentication system width signup/email/login/signout.
+- awesome fully mobile responsive design.
 - view any movie/series details/watch trailer.
