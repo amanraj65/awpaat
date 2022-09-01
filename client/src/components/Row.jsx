@@ -26,7 +26,7 @@ const Row = ({ title, media_type="movie", genre: genre }) => {
       listRef.current.style.transform = `translateX(${450 + distance}px)`;
     }
 
-    if (direction === "right" && slideNumber < 8) {
+    if (direction === "right" && slideNumber < 6) {
       setSlideNumber(slideNumber + 1);
       listRef.current.style.transform = `translateX(${-450 + distance}px)`;
     }
