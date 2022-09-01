@@ -23,12 +23,12 @@ const Row = ({ title, media_type="movie", genre: genre }) => {
     const distance = listRef.current.getBoundingClientRect().x - 50;
     if (direction === "left" && slideNumber > 0) {
       setSlideNumber(slideNumber - 1);
-      listRef.current.style.transform = `translateX(${230 + distance}px)`;
+      listRef.current.style.transform = `translateX(${450 + distance}px)`;
     }
 
     if (direction === "right" && slideNumber < 8) {
       setSlideNumber(slideNumber + 1);
-      listRef.current.style.transform = `translateX(${-230 + distance}px)`;
+      listRef.current.style.transform = `translateX(${-450 + distance}px)`;
     }
   };
 
