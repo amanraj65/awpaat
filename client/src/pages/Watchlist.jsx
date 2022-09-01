@@ -29,6 +29,7 @@ const WatchList = () => {
       navigate("/login");
     }
   }, []);
+  console.log(movies)
 
   return (
     <Container>
@@ -36,7 +37,7 @@ const WatchList = () => {
       <h1>My WatchList</h1>
       <div className="rows">
         {movies?.map((movie, index) => {
-          return <RowItem movieData={movie} index={index} key={movie.id} />;
+          return <RowItem movieData={movie} media_type={movie.number_of_seasons?"tv":"movie"} index={index} key={movie.id} />;
         })}
         {noLikedMovies && (
           <div className="noMovies">

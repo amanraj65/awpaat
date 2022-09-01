@@ -21,7 +21,7 @@ const Search = () => {
     };
     handleSearch();
   }, [search]);
-
+  //console.log(movies)
   return (
     <Container>
       <div className="search-container">
@@ -36,7 +36,7 @@ const Search = () => {
       </div>
       <Rows>
         {movies.map((movie, index) => {
-          return <RowItem movieData={movie} index={index} key={movie.id} />;
+          return <RowItem movieData={movie} media_type={movie.media_type} index={index} key={movie.id} />;
         })}
       </Rows>
       {movies.length === 0 && (
